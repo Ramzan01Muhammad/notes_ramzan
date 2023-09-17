@@ -29,7 +29,7 @@ class Onboradingscreen extends StatelessWidget {
                 'Jot Down anything you want to achieve,today or in the future',
                 style: TextStyle(
                     fontFamily: 'poppins',
-                    fontSize: 15.sp,
+                    fontSize: 16.sp,
                     color: MyColor.whitecolor,
                     fontWeight: FontWeight.w700),
                 textAlign: TextAlign.center,
