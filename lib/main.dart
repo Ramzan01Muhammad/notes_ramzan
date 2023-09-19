@@ -20,10 +20,10 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           // home:Lecturesixth(),
           // home: Onboradingscreen(),
-          // home: Screentwo(),
+          home: Screentwo(),
           // home: Screenthree(),
           // home: Screenfourth(),
-          home: Screenfifth(),
+          // home: Screenfifth(),
         ),);
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:notes/helper/constant.dart';
+import 'package:notes/views/screen/screen_two.dart';
 import 'package:sizer/sizer.dart';
 
 class Onboradingscreen extends StatelessWidget {
@@ -37,26 +38,32 @@ class Onboradingscreen extends StatelessWidget {
               SizedBox(
                 height: 150,
               ),
-              Container(
-                padding: EdgeInsets.symmetric(vertical: 7.sp),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(100),
-                  color: MyColor.whitecolor,
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    SizedBox(),
-                    Text(
-                      'Let’s Get Started',
-                      style: TextStyle(
-                          color: MyColor.appcolor,
-                          fontFamily: 'poppins',
-                          fontSize: 13.sp,
-                          fontWeight: FontWeight.w500),
-                    ),
-                    Icon(Icons.arrow_forward),
-                  ],
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Screentwo()));
+                },
+                child: Container(
+                  padding: EdgeInsets.symmetric(vertical: 7.sp),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(100),
+                    color: MyColor.whitecolor,
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      SizedBox(),
+                      Text(
+                        'Let’s Get Started',
+                        style: TextStyle(
+                            color: MyColor.appcolor,
+                            fontFamily: 'poppins',
+                            fontSize: 13.sp,
+                            fontWeight: FontWeight.w500),
+                      ),
+                      Icon(Icons.arrow_forward),
+                    ],
+                  ),
                 ),
               )
             ],

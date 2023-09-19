@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:notes/helper/constant.dart';
+import 'package:notes/views/screen/onboardin_screen.dart';
 import 'package:sizer/sizer.dart';
 
 class Screenfifth extends StatelessWidget {
@@ -13,10 +14,16 @@ class Screenfifth extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: MyColor.whitecolor,
           elevation: 0,
-          leading: Icon(
-            Icons.arrow_back_ios,
-            color: MyColor.appcolor,
-            size: 12.sp,
+          leading: GestureDetector(
+            onTap: (){
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Onboradingscreen()));
+            },
+            child: Icon(
+              Icons.arrow_back_ios,
+              color: MyColor.appcolor,
+              size: 12.sp,
+            ),
           ),
           title: Text(
             'Back to Login',

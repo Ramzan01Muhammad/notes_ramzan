@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:notes/helper/constant.dart';
+import 'package:notes/views/screen/screen_three.dart';
 import 'package:sizer/sizer.dart';
 
 class Screentwo extends StatelessWidget {
@@ -128,10 +129,16 @@ class Screentwo extends StatelessWidget {
                                 fontSize: 13.sp,
                                 fontWeight: FontWeight.w500),
                           ),
-                          Icon(
-                            Icons.arrow_forward,
-                            color: MyColor.whitecolor,
-                            size: 15.sp,
+                          GestureDetector(
+                            onTap: (){
+                              Navigator.push(context,
+                                  MaterialPageRoute(builder: (context) => Screenthree()));
+                            },
+                            child: Icon(
+                              Icons.arrow_forward,
+                              color: MyColor.whitecolor,
+                              size: 15.sp,
+                            ),
                           ),
                         ],
                       ),
