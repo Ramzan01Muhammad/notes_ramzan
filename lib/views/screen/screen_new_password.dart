@@ -3,19 +3,20 @@ import 'package:notes/helper/constant.dart';
 import 'package:notes/views/screen/onboardin_screen.dart';
 import 'package:sizer/sizer.dart';
 
-class Screenfifth extends StatelessWidget {
-  const Screenfifth({super.key});
+class ScreenNewPassword extends StatelessWidget {
+  const ScreenNewPassword({super.key});
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        resizeToAvoidBottomInset: true,
         backgroundColor: MyColor.whitecolor,
         appBar: AppBar(
           backgroundColor: MyColor.whitecolor,
           elevation: 0,
           leading: GestureDetector(
-            onTap: (){
+            onTap: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => Onboradingscreen()));
             },
@@ -81,6 +82,8 @@ class Screenfifth extends StatelessWidget {
               ),
               TextFormField(
                 decoration: InputDecoration(
+                  contentPadding:
+                      EdgeInsets.symmetric(vertical: 10.sp, horizontal: 12),
                   hintText: '*********',
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(6),
@@ -88,11 +91,13 @@ class Screenfifth extends StatelessWidget {
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(6),
                   ),
-                  filled: true,
-                  fillColor: MyColor.filledlcolor,
+                  // filled: true,
+                  // fillColor: MyColor.filledlcolor,
                 ),
               ),
-              SizedBox(height: 5.sp,),
+              SizedBox(
+                height: 5.sp,
+              ),
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
@@ -101,25 +106,30 @@ class Screenfifth extends StatelessWidget {
                       fontWeight: FontWeight.w400,
                       fontSize: 10.sp,
                       fontFamily: 'poppins',
-                      color: Color(0xffC8C5CB)
+                      color: Color(0xffC8C5CB)),
+                ),
+              ),
+              SizedBox(
+                height: 33.sp,
+              ),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  'Retype New Password',
+                  style: TextStyle(
+                    fontFamily: 'poppins',
+                    fontSize: 13.sp,
+                    fontWeight: FontWeight.w500,
                   ),
                 ),
               ),
-            SizedBox(height: 13.sp,),
-            Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                'Retype New Password',
-                style: TextStyle(
-                  fontFamily: 'poppins',
-                  fontSize: 13.sp,
-                  fontWeight: FontWeight.w500,
-                ),
+              SizedBox(
+                height: 6.sp,
               ),
-            ),
-              SizedBox(height: 6.sp,),
               TextFormField(
                 decoration: InputDecoration(
+                  contentPadding:
+                      EdgeInsets.symmetric(vertical: 10.sp, horizontal: 12),
                   hintText: '*********',
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(6),
@@ -127,14 +137,12 @@ class Screenfifth extends StatelessWidget {
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(6),
                   ),
-                  filled: true,
-                  fillColor: MyColor.filledlcolor,
+                  // filled: true,
+                  // fillColor: MyColor.filledlcolor,
                 ),
               ),
-
-
               SizedBox(
-                height: 170.sp,
+                height: 130.sp,
               ),
               Container(
                 padding: EdgeInsets.symmetric(vertical: 12.sp),

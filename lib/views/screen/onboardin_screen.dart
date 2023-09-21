@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:notes/helper/constant.dart';
-import 'package:notes/views/screen/screen_two.dart';
+import 'package:notes/views/screen/screen_log_in.dart';
 import 'package:sizer/sizer.dart';
 
 class Onboradingscreen extends StatelessWidget {
@@ -10,6 +10,7 @@ class Onboradingscreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        resizeToAvoidBottomInset: true,
         backgroundColor: MyColor.appcolor,
         body: Padding(
           padding: EdgeInsets.symmetric(horizontal: 20.sp),
@@ -41,7 +42,7 @@ class Onboradingscreen extends StatelessWidget {
               GestureDetector(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Screentwo()));
+                      MaterialPageRoute(builder: (context) => ScreenLogIn()));
                 },
                 child: Container(
                   padding: EdgeInsets.symmetric(vertical: 7.sp),
@@ -61,7 +62,7 @@ class Onboradingscreen extends StatelessWidget {
                             fontSize: 13.sp,
                             fontWeight: FontWeight.w500),
                       ),
-                      Icon(Icons.arrow_forward),
+                      Icon(Icons.arrow_forward,size: 15.sp,),
                     ],
                   ),
                 ),

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:notes/views/screen/onboardin_screen.dart';
-import 'package:notes/views/screen/screen_fifth.dart';
-import 'package:notes/views/screen/screen_fourth.dart';
-import 'package:notes/views/screen/screen_three.dart';
-import 'package:notes/views/screen/screen_two.dart';
+import 'package:notes/views/screen/screen_new_password.dart';
+import 'package:notes/views/screen/screen_forget_password.dart';
+import 'package:notes/views/screen/screen_register.dart';
+import 'package:notes/views/screen/screen_log_in.dart';
 import 'package:sizer/sizer.dart';
 
 void main() {
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           // home:Lecturesixth(),
           // home: Onboradingscreen(),
-          home: Screentwo(),
+          home: ScreenLogIn(),
           // home: Screenthree(),
           // home: Screenfourth(),
           // home: Screenfifth(),
